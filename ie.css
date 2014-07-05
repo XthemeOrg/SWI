@@ -1,0 +1,25 @@
+#livesearch {
+  border: 1px solid #666;
+}
+
+table {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+ul, li {
+  font-size: 12px;
+}
+
+form input[type="text"], form input[type="password"] {
+  line-height: 28px;
+}
+
+#search {
+  color: #404040;
+  font-size: 11px;
+}
+
+.wysiwym iframe {
+  overflow: none !important;
+}
