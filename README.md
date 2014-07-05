@@ -166,7 +166,7 @@ That's it! You should be able to direct your browser to http://www.yournetwork.n
 
 ## Issues/Bugs
 
-Please report all issues/bugs to Issues [https://github.com/siniStar7boy/SWI/issues] (in addition to IRC). 
+Please report all issues/bugs to Issues (https://github.com/siniStar7boy/SWI/issues) (in addition to IRC). 
 
 
 
