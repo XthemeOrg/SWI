@@ -2,11 +2,11 @@
 
 ## About
 
-**author** siniStar @ IRC4Fun
+**author** siniStar @ IRC4Fun.net
 
 **author email** siniStar [at] IRC4Fun [dot] net
 
-**author url** http://www.IRC4Fun.net/swi
+**author url** http://sinistar7boy.github.io/SWI/
 
 **version** 3.2.7
 
@@ -66,7 +66,7 @@ During this installation I'm going to assume a few things.
 
 First your going to need to obtain a copy of SWI one can be found here
 
-	##COMING SOON##
+	http://sinistar7boy.github.io/SWI/
 
 Next up you're going to have to edit the swi/config/config.php file to reflect the settings of your web server and Atheme installation.
 
