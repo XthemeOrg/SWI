@@ -41,8 +41,8 @@ and BotServ use via the World Wide Web.
 
     1) NickServ Settings page
 	2) ChanServ Settings page
-	3) ChanServ WAITING list added to OperServ dashboard for networks running chanserv/moderate with Atheme
-	4) HostServ WAITING list added to OperServ dashboard
+	3) ChanServ WAITING list added to OperServ dashboard for networks running chanserv/moderate with Atheme (optional)
+	4) HostServ WAITING list added to OperServ dashboard (optional)
 	5) BotServ consoles added: BOTLIST, ASSIGN, UNASSIGN and BOT MANAGEMENT (add/change/delete) for Services Operators
     6) Current Sessions page added to main dashboard
 
@@ -164,7 +164,9 @@ This is current supported on Apache, Lighttpd, Nginx and any other web server th
 
 That's it! You should be able to direct your browser to http://www.yournetwork.net/swi/ and login using your Atheme Nickserv account nickname and password.
 
+## Issues/Bugs
 
+Please report all issues/bugs to Issues [https://github.com/siniStar7boy/SWI/issues] (in addition to IRC). 
 
 
 
