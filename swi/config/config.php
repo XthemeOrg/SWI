@@ -105,6 +105,20 @@ $config['web_register'] = TRUE;
 $config['staff_messages'] = TRUE;
 
 /**
+ * Network Facebook URL?
+ * Optional URL to network Facebook account.  
+ * You will probably want to change this from the default
+ */
+$config['fb_url'] = 'http://www.facebook.com/IRC4Fun';
+
+/**
+ * Network Twitter URL?
+ * Optional URL to network Twitter account.  
+ * You will probably want to change this from the default
+ */
+$config['tw_url'] = 'http://twitter.com/IRC4Fun';
+
+/**
  * Index Page
  * This variable should be left as is UNLESS you want to remove it using .htaccess
  * and mod_rewrite (or equivalent) in that case comment out the line below and keep reading.
