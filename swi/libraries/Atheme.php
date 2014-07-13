@@ -1,13 +1,13 @@
 <?php if(!defined('BASEPATH')) exit('No direct script access allowed');
 
 /****************************************************************/
-/* EGs Web Panel (Web Services for Atheme)                      */
+/* SWI3 Inferface by siniStar @ IRC4Fun                         */
 /*                                                              */
-/* author: 	J. Newing (synmuffin)                               */
-/* web:		http://egs.ircmojo.org                              */
-/* email: 	jnewing [at] gmail [dot] com                        */
-/* irc: 	pool.ircmojo.org                                    */
-/* version: 3.1                                                 */
+/* author: 	Austin (siniStar)                                   */
+/* web:		http://sinistar7boy.github.io/SWI/					*/
+/* email: 	siniStar [at] IRC4Fun [dot] net                     */
+/* irc: 	irc.IRC4Fun.net                                     */
+/* version: 3.2.7                                               */
 /****************************************************************/
 
 

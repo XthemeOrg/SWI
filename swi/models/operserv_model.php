@@ -269,8 +269,8 @@ class Operserv_model extends CI_Model {
 
 	/**
 	 * akill_del()
-	 * function deletes an akill for the akill list via id, now i know that bulk actions are supported bia #,#,# or #:# format
-	 * however i've not yet added support for it in EGs... it's on the todo list.
+	 * function deletes an akill for the akill list via id, now i know that bulk actions are supported via #,#,# or #:# format
+	 * however support for it has not been added to SWI yet... it's on the todo list.
 	 *
 	 * @param int $akill_id 	- the id of the akill to remove
 	 */
