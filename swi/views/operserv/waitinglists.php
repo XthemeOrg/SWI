@@ -12,10 +12,10 @@
 					<p class="hlight">
 
 			<?php if ($this->config->item('atheme_cswaiting')) : ?>	
-* <a href=<?php print site_url('operserv/waiting'); ?>><strong>Channel Reviews</strong></a> - Activate or Reject channels awaiting registration with IRC4Fun Services <em>(<strong><?php print ucfirst(strtolower($this->config->item('atheme_chanserv'))); ?></strong>)</em> <BR>
+* <a href=<?php print site_url('operserv/waiting'); ?>><strong>Channel Reviews</strong></a> - Activate or Reject channels awaiting registration with <strong><?php print ucfirst(strtolower($this->config->item('atheme_chanserv'))); ?></strong>. <BR>
 			<?php endif; ?>
 			<?php if ($this->config->item('atheme_hswaiting')) : ?>
-* <a href=<?php print site_url('operserv/hswaiting'); ?>><strong>vHost Reviews</strong></a> - Activate or Reject customized vHosts requests with IRC4Fun Services <em>(<strong><?php print ucfirst(strtolower($this->config->item('atheme_hostserv'))); ?></strong>)</em> 
+* <a href=<?php print site_url('operserv/hswaiting'); ?>><strong>vHost Reviews</strong></a> - Activate or Reject customized vHosts requests with <strong><?php print ucfirst(strtolower($this->config->item('atheme_hostserv'))); ?></strong>. 
 			<?php endif; ?>
 
 			</p>
