@@ -34,6 +34,12 @@
                 <?php if ($this->config->item('atheme_botserv')) : ?>
                 	<li <?php print ((stristr(uri_string(), "botserv")) ? 'class="current"' : '') ?>><a href="<?php print site_url('botserv/botlist'); ?>"><span class="icon anchor"></span><?php print ucfirst(strtolower($this->config->item('atheme_botserv'))); ?></a></li>
                 <?php endif; ?>
+				
+			<?php if ($this->config->item('atheme_groups')) : ?>
+                <?php if ($this->config->item('atheme_groupserv')) : ?>
+                	<li <?php print ((stristr(uri_string(), "groupserv")) ? 'class="current"' : '') ?>><a href="<?php print site_url('groupserv/listgroups'); ?>"><span class="icon gallery"></span><?php print ucfirst(strtolower($this->config->item('atheme_groupserv'))); ?></a></li>
+                <?php endif; ?>
+            <?php endif; ?>
 
                 <?php if ($this->config->item('atheme_operserv') && $this->operserv_model->check_access()) : ?>
                 	<li <?php print ((stristr(uri_string(), "operserv")) ? 'class="current"' : '') ?>><a href="<?php print site_url('operserv'); ?>"><span class="icon chart"></span><?php print ucfirst(strtolower($this->config->item('atheme_operserv'))); ?></a></li>
@@ -98,6 +104,17 @@
 		                <?php endif; ?>
 			</ul>
 
+			<?php elseif (stristr(uri_string(), "groupserv")) : ?>
+			<ul>
+				<li <?php print ((uri_string() === "groupserv/listgroups") ? 'class="current"' : '') ?>><a href="<?php print site_url('groupserv/listgroups'); ?>"><?php _t('gs_listgroups'); ?></a></li>
+				<li <?php print ((uri_string() === "groupserv/join") ? 'class="current"' : '') ?>><a href="<?php print site_url('groupserv/join'); ?>"><?php _t('gs_join'); ?></a></li>
+				<li <?php print ((uri_string() === "groupserv/info") ? 'class="current"' : '') ?>><a href="<?php print site_url('groupserv/info'); ?>"><?php _t('gs_info'); ?></a></li>
+				<li <?php print ((uri_string() === "groupserv/flags") ? 'class="current"' : '') ?>><a href="<?php print site_url('groupserv/flags'); ?>"><?php _t('gs_flags'); ?></a></li>
+				<li <?php print ((uri_string() === "groupserv/listchans") ? 'class="current"' : '') ?>><a href="<?php print site_url('groupserv/listchans'); ?>"><?php _t('gs_listchans'); ?></a></li>
+				<li <?php print ((uri_string() === "groupserv/register") ? 'class="current"' : '') ?>><a href="<?php print site_url('groupserv/register'); ?>"><?php _t('gs_register'); ?></a></li>
+				<li <?php print ((uri_string() === "groupserv/set") ? 'class="current"' : '') ?>><a href="<?php print site_url('groupserv/set'); ?>"><?php _t('gs_set'); ?></a></li>
+			</ul>
+			
 		<?php elseif (stristr(uri_string(), "operserv")) : ?>
 			<ul>
 				<li <?php print ((uri_string() === "operserv") ? 'class="current"' : '') ?>><a href="<?php print site_url('operserv'); ?>"><?php _t('os_dashboard'); ?></a></li>

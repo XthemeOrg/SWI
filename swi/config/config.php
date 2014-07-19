@@ -46,6 +46,7 @@ $config['atheme_memoserv'] = "MemoServ";
 $config['atheme_hostserv'] = "HostServ";
 $config['atheme_operserv'] = "OperServ";
 $config['atheme_botserv'] = "BotServ";
+$config['atheme_groupserv'] = "GroupServ";
 
 /**
  * XOP System
@@ -82,6 +83,12 @@ $config['atheme_cswaiting']	= FALSE;
  * OperServ dashboard.
  */
 $config['atheme_hswaiting']	= FALSE;
+
+/**
+ * GroupServ FUNCTIONALITY
+ * If you wish to enable the GroupServ within SWI.
+ */
+$config['atheme_groups']	= FALSE;
 
 /**
  * SOPER Module?

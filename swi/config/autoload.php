@@ -5,4 +5,4 @@ $autoload['libraries'] 	= array('session', 'xmlrpc', 'form_validation', 'atheme'
 $autoload['helper'] 	= array('url', 'file', 'form', 'language', 'gravatar');
 $autoload['config'] 	= array();
 $autoload['language'] 	= array('english');
-$autoload['model'] 		= array('memoserv_model', 'nickserv_model', 'chanserv_model', 'botserv_model', 'hostserv_model', 'operserv_model');
+$autoload['model'] 		= array('memoserv_model', 'nickserv_model', 'chanserv_model', 'botserv_model', 'groupserv_model', 'hostserv_model', 'operserv_model');

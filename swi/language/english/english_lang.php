@@ -183,4 +183,13 @@ $lang['os_soper_del']                   = "Delete SOPER";
 $lang['os_waitinglists']                = "Waiting Lists";
 $lang['os_dashboard']                   = "Dashboard";
 
+// GROUPSERV
+$lang['gs_listgroups']                  = "List Groups";
+$lang['gs_join']	   	                = "Join Group";
+$lang['gs_info']	       			    = "Group Info";
+$lang['gs_flags'] 					    = "Group Flags";
+$lang['gs_listchans']                   = "List Channel Access";
+$lang['gs_register']                    = "Register Group";
+$lang['gs_set']  	                    = "Group Settings";
+
 // EOF
