@@ -8,7 +8,7 @@
 
 **author url** http://sinistar7boy.github.io/SWI/
 
-**version** 3.2.7
+**version** 3.2.9
 
 - - -
 
@@ -45,6 +45,8 @@ and BotServ use via the World Wide Web.
 	4) HostServ WAITING list added to OperServ dashboard (optional)
 	5) BotServ consoles added: BOTLIST, ASSIGN, UNASSIGN and BOT MANAGEMENT (add/change/delete) for Services Operators
     6) Current Sessions page added to main dashboard
+	7) Facebook & Twitter links for networks (customizable)
+	8) GroupServ console & functionality added (optional)
 
 - - -
 
