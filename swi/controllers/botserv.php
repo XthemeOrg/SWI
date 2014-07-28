@@ -4,10 +4,9 @@
 /* SWI3 Inferface by siniStar @ IRC4Fun                         */
 /*                                                              */
 /* author: 	Austin (siniStar)                                   */
-/* web:		http://sinistar7boy.github.io/SWI/					*/
+/* web:		http://irc4fun.github.io/SWI/						*/
 /* email: 	siniStar [at] IRC4Fun [dot] net                     */
 /* irc: 	irc.IRC4Fun.net                                     */
-/* version: 3.2.7                                               */
 /****************************************************************/
 
 
