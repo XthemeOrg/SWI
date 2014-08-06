@@ -41,7 +41,7 @@
 							Where can I get SWI3?							
 						</label>
 						<div>
-							<small>Our Services Web Interface (version3) is available at <a href="http://sinistar7boy.github.io/SWI/" target="_blank">http://sinistar7boy.github.io/SWI/</a>.  For support with SWI, please see <strong>irc.IRC4Fun.net</strong> and join <strong>#SWI</strong> for more information!</small>
+							<small>Our Services Web Interface (version3) is available at <a href="http://irc4fun.github.io/SWI/" target="_blank">http://irc4fun.github.io/SWI/</a>.  For support with SWI, please see <strong>irc.IRC4Fun.net</strong> and join <strong>#SWI</strong> for more information!</small>
 						</div>
 					</section>
 
