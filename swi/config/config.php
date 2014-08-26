@@ -112,6 +112,13 @@ $config['web_register'] = TRUE;
 $config['staff_messages'] = TRUE;
 
 /**
+ * Enable Social Media?
+ * Optional links to network facebook or twitter.  
+ * TRUE enables Social Media, FALSE disables it.
+ */
+$config['social_media'] = TRUE;
+
+/**
  * Network Facebook URL?
  * Optional URL to network Facebook account.  
  * You will probably want to change this from the default
