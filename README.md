@@ -8,7 +8,7 @@
 
 **author url** http://www.IRC4Fun.net
 
-**version** 3.2.9
+**version** 3.3.0
 
 - - -
 
