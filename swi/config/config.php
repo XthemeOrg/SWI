@@ -61,6 +61,16 @@ $config['atheme_xop']	= TRUE;
 $config['atheme_flags']	= TRUE;
 
 /**
+ * Current Sessions (contrib/ns_listlogins) System
+ * If you wish to enable the Current Sessions system within SWI
+ * you must ensure that the Atheme contrib/ns_listlogins module
+ * is loaded on your Atheme Services instance and set this to 
+ * TRUE.  To disable Current Sessions, or if your Atheme is not
+ * using contrib/ns_listlogins keep this at FALSE.
+ */
+$config['atheme_listlogins']	= FALSE;
+
+/**
  * WAITING LISTS System
  * If you wish to enable the WAITING LISTS system within SWI
  * OperServ dashboard.

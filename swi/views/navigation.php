@@ -52,7 +52,9 @@
 		<?php if (stristr(uri_string(), "main")) : ?>
 		<ul>
 			<li <?php print ((uri_string() === "main/home") ? 'class="current"' : '') ?>><a href="<?php print site_url('main'); ?>"><?php _t('gen_dashboard'); ?></a></li>
+			<?php if ($this->config->item('atheme_listlogins')) : ?>
 			<li <?php print ((uri_string() === "main/logins") ? 'class="current"' : '') ?>><a href="<?php print site_url('main/logins'); ?>"><?php _t('curr_logins'); ?></a></li>
+			<?php endif; ?>
 			<?php if ($this->config->item('staff_messages')) : ?>
 			<li <?php print ((uri_string() === "main/staff_messages") ? 'class="current"' : '') ?>><a href="<?php print site_url('main/staff_messages'); ?>"><?php _t('msgs_staff'); ?></a></li>
 			<?php endif; ?>
