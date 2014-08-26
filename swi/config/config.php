@@ -238,4 +238,4 @@ $config['csrf_expire'] = 7200;
 $config['time_reference'] = 'local';
 $config['rewrite_short_tags'] = FALSE;
 $config['proxy_ips'] = '';
-$config['swi_vers'] = 'v3.2.9';
+$config['swi_vers'] = 'v3.3.0';
