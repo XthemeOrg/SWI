@@ -45,7 +45,7 @@ and BotServ use via the World Wide Web.
 	4) HostServ WAITING list added to OperServ dashboard (optional)
 	5) BotServ consoles added: BOTLIST, ASSIGN, UNASSIGN and BOT MANAGEMENT (add/change/delete) for Services Operators
     6) Current Sessions page added to main dashboard
-	7) Facebook & Twitter links for networks (customizable)
+	7) Facebook & Twitter links for networks (optional)
 	8) GroupServ console & functionality added (optional)
 
 - - -
