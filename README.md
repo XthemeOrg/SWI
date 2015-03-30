@@ -30,7 +30,7 @@ along with SWI.  If not, see http://www.gnu.org/licenses/
 
 - - -
 
-## SWI Web Panel for Atheme IRC Services.
+## SWI Web Panel for Atheme IRC Services (and Atheme forks)
 
 SWI is a simple web panel for Atheme IRC services. It aims to be clean, sleek and fast. With minimul installation and configuration required.
 SWI is a fork of EGs (https://bitbucket.org/jnewing/egs) with some bug fixes, cosmetic improvements and additional features and consoles in
@@ -52,8 +52,8 @@ and BotServ use via the World Wide Web.
 
 ## Support
 
-If you need support please come talk to me on /server -m irc.IRC4Fun.net in #SWI however before doing that make sure you read this file, at
-least twice.  You can also find me on AthemeNet (irc.atheme.org) in #SWI
+If you need support please come talk to me on irc.IRC4Fun.net in #SWI however before doing that make sure you read this file, at
+least twice.  You can also find me on Freenode (chat.freenode.net) in ##SWI
 
 - - -
 
