@@ -2,11 +2,11 @@
 
 ## About
 
-**author** siniStar @ IRC4Fun.net
+**author** siniStar @ Xtheme Development Group
 
 **author email** siniStar [at] IRC4Fun [dot] net
 
-**author url** http://www.IRC4Fun.net
+**author url** http://www.Xtheme.net
 
 **version** 3.3.0
 
@@ -53,7 +53,7 @@ and BotServ use via the World Wide Web.
 ## Support
 
 If you need support please come talk to me on irc.IRC4Fun.net in #SWI however before doing that make sure you read this file, at
-least twice.  You can also find me on Freenode (chat.freenode.net) in ##SWI
+least twice.  You can also find me on Freenode (chat.freenode.net) in #SWI
 
 - - -
 
@@ -68,7 +68,7 @@ During this installation I'm going to assume a few things.
 
 First your going to need to obtain a copy of SWI one can be found here
 
-	http://irc4fun.github.io/SWI/
+	http://www.Xtheme.org/SWI/
 
 Next up you're going to have to edit the swi/config/config.php file to reflect the settings of your web server and Xtheme installation.
 
@@ -168,7 +168,7 @@ That's it! You should be able to direct your browser to http://www.yournetwork.n
 
 ## Issues/Bugs
 
-Please report all issues/bugs to Issues (https://github.com/IRC4Fun/SWI/issues) (in addition to IRC). 
+Please report all issues/bugs to Issues (https://github.com/XthemeOrg/SWI/issues) (in addition to IRC). 
 
 
 
