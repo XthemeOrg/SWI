@@ -16,29 +16,29 @@ $config['base_url']	= 'http://yournetwork.net/swi/';
 $config['site_name']	= "IRC4Fun Services Web Interface";
 
 /** 
- * Atheme Host
+ * Xtheme/Atheme Host
  * This should the set to the ip address or hostname that is running
- * your Atheme serivces
+ * your Xtheme/Atheme serivces
  */
 $config['atheme_host'] = "127.0.0.1";
 
 /**
- * Atheme Path
- * This should be set to the xmlrpc path in your atheme.conf you should
- * be able to just leave this as is.
+ * Xtheme/Atheme Path
+ * This should be set to the xmlrpc path in your xtheme.conf/atheme.conf,
+ * you should be able to just leave this as is.
  */
 $config['atheme_path'] = "/xmlrpc";
 
 /**
- * Atheme Port
- * The port your atheme httpd is running on
+ * Xtheme/Atheme Port
+ * The port your Xtheme/Atheme httpd is running on
  */
 $config['atheme_port'] = 8080;
 
 /**
- * Atheme Service
- * Set these to the names of the atheme services you run on your network
- * FALSE if they do NOT exist on your network
+ * Xtheme/Atheme Service
+ * Set these to the names of the Xtheme/Atheme services you run on your
+ *  network.  FALSE if they do NOT exist on your network
  */
 $config['atheme_chanserv'] = "ChanServ";
 $config['atheme_nickserv'] = "NickServ";
@@ -63,9 +63,9 @@ $config['atheme_flags']	= TRUE;
 /**
  * Current Sessions (contrib/ns_listlogins) System
  * If you wish to enable the Current Sessions system within SWI
- * you must ensure that the Atheme contrib/ns_listlogins module
- * is loaded on your Atheme Services instance and set this to 
- * TRUE.  To disable Current Sessions, or if your Atheme is not
+ * you must ensure that the Xtheme/Atheme contrib/ns_listlogins module
+ * is loaded on your Xtheme/Atheme Services instance and set this to 
+ * TRUE.  To disable Current Sessions, or if your Xtheme/Atheme is not
  * using contrib/ns_listlogins keep this at FALSE.
  */
 $config['atheme_listlogins']	= FALSE;
@@ -83,14 +83,16 @@ $config['atheme_waitings']	= FALSE;
 /**
  * ChanServ WAITING LIST
  * If you wish to enable the ChanServ WAITING LIST within SWI
- * OperServ dashboard.
+ * OperServ dashboard. *Requires chanserv/moderate enabled in
+ * Xtheme/Atheme configuration file. (xtheme.conf/atheme.conf)
  */
 $config['atheme_cswaiting']	= FALSE;
 
 /**
  * HostServ WAITING LIST
  * If you wish to enable the HostServ WAITING LIST within SWI
- * OperServ dashboard.
+ * OperServ dashboard. *Requires hostserv/request enabled in
+ * Xtheme/Atheme configuration file. (xtheme.conf/atheme.conf)
  */
 $config['atheme_hswaiting']	= FALSE;
 
