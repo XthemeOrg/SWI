@@ -1,13 +1,14 @@
 		<?php if ($this->session->userdata('is_authed')) : ?>
 		
 		<?php
-			if ($this->config->item('atheme_memoserv'))
+			if ($this->config->item('atheme_memoserv')) {
 				$mdata = $this->memoserv_model->get_memos(TRUE);
 				
-			if (preg_match('/\((.*) new\)/sm', $mdata['data'], $regs))
-				$new_memos = $regs[1];
-			else
-				$new_memos = FALSE;	
+				if (preg_match('/\((.*) new\)/sm', $mdata['data'], $regs))
+					$new_memos = $regs[1];
+				else
+					$new_memos = FALSE;
+			}
 		?>
 		
 		<!-- primary navigation -->
