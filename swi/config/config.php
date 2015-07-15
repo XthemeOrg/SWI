@@ -61,6 +61,18 @@ $config['atheme_xop']	= TRUE;
 $config['atheme_flags']	= TRUE;
 
 /**
+ * Does your network use +q & +a channel modes? (~Owner & &Protected)
+ * (+q & +a e.g. ~Owner & &Protected)
+ */
+$config['ircd_qa']	= TRUE;
+
+/**
+ * Does your network use +h channel modes? (%Halfop)
+ * (Does your network use halfops channel modes?)
+ */
+$config['ircd_ho']	= TRUE;
+
+/**
  * Current Sessions (contrib/ns_listlogins) System
  * If you wish to enable the Current Sessions system within SWI
  * you must ensure that the Xtheme/Atheme contrib/ns_listlogins module
@@ -243,4 +255,4 @@ $config['csrf_expire'] = 7200;
 $config['time_reference'] = 'local';
 $config['rewrite_short_tags'] = FALSE;
 $config['proxy_ips'] = '';
-$config['swi_vers'] = 'v3.3.1';
+$config['swi_vers'] = 'v3.3.2';

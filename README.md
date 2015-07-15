@@ -8,7 +8,7 @@
 
 **author url** http://www.Xtheme.org
 
-**version** 3.3.1
+**version** 3.3.2
 
 - - -
 
@@ -48,6 +48,7 @@ and BotServ use via the World Wide Web.
 	7) Facebook & Twitter links for networks (optional)
 	8) GroupServ console & functionality added (optional)
 	9) ReCaptcha v2
+	10) Configure whether to show +qah in flags assistance to users based on how the network is configured.
 
 - - -
 

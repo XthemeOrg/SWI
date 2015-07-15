@@ -23,7 +23,7 @@
 							What has changed?							
 						</label>
 						<div>
-							<small>We have fixed various bugs and made some outputs from commands display better or a bit more visually pleasing.  We've also added lots of additional functionality to various dashboards/consoles and have more plans & features in store for the near future!</small>
+							<small>We have fixed various bugs and made some outputs from commands display better or a bit more visually pleasing.  We've also added lots of additional functionality and support for services such as <strong>BotServ & GroupServ</strong>, social media and have more plans & features in store for the near future!</small>
 						</div>
 					</section>
 

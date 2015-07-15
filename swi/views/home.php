@@ -47,6 +47,7 @@
 					<td>V</td>
 					<td>Enables automatic voice.</td>
 				</tr>
+<?php if ($this->config->item('ircd_ho')) : ?>
 				<tr>
 					<td>h</td>
 					<td>Enables use of the halfop/dehalfop commands.</td>
@@ -55,6 +56,7 @@
 					<td>H</td>
 					<td>Enables automatic halfop.</td>
 				</tr>
+<?php endif; ?>
 				<tr>
 					<td>o</td>
 					<td>Enables use of the op/deop commands.</td>
@@ -63,6 +65,7 @@
 					<td>O</td>
 					<td>Enables automatic op.</td>
 				</tr>
+<?php if ($this->config->item('ircd_qa')) : ?>
 				<tr>
 					<td>a</td>
 					<td>Enables use of the protect/deprotect commands.</td>
@@ -71,6 +74,7 @@
 					<td>q</td>
 					<td>Enables use of the owner/deowner commands.</td>
 				</tr>
+<?php endif; ?>
 				<tr>
 					<td>s</td>
 					<td>Enables use of the set command.</td>
@@ -98,10 +102,6 @@
 				<tr>
 					<td>A</td>
 					<td>Enables viewing of channel access lists.</td>
-				</tr>
-				<tr>
-					<td>S</td>
-					<td>Marks the user as a successor.</td>
 				</tr>
 				<tr>
 					<td>F</td>
