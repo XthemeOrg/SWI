@@ -94,7 +94,7 @@
 					<label>
 						Setting
 						<small>The account setting you wish to change</small>
-					</label>
+					</label></section>
 					<section>
 <select name="set_option">
 	<option>EmailMemos</option>
