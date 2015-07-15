@@ -135,14 +135,14 @@ $config['social_media'] = TRUE;
  * Optional URL to network Facebook account.  
  * You will probably want to change this from the default
  */
-$config['fb_url'] = 'http://www.facebook.com/IRC4Fun';
+$config['fb_url'] = 'http://www.facebook.com/XthemeOrg';
 
 /**
  * Network Twitter URL?
  * Optional URL to network Twitter account.  
  * You will probably want to change this from the default
  */
-$config['tw_url'] = 'http://twitter.com/IRC4Fun';
+$config['tw_url'] = 'http://twitter.com/XthemeOrg';
 
 /**
  * Index Page
