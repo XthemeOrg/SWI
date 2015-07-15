@@ -6,9 +6,9 @@
 
 **author email** siniStar [at] IRC4Fun [dot] net
 
-**author url** http://www.Xtheme.net
+**author url** http://www.Xtheme.org
 
-**version** 3.3.0
+**version** 3.3.1
 
 - - -
 
@@ -47,6 +47,7 @@ and BotServ use via the World Wide Web.
     6) Current Sessions page added to main dashboard
 	7) Facebook & Twitter links for networks (optional)
 	8) GroupServ console & functionality added (optional)
+	9) ReCaptcha v2
 
 - - -
 

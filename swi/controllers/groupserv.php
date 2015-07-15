@@ -1,12 +1,12 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 /****************************************************************/
-/* SWI3 Inferface by siniStar @ IRC4Fun                         */
+/* SWI (Services Web Interface) An enhanced web-panel for IRC   */
+/*    networks.                                                 */
 /*                                                              */
-/* author: 	Austin (siniStar)                                   */
-/* web:		http://irc4fun.github.io/SWI/						*/
-/* email: 	siniStar [at] IRC4Fun [dot] net                     */
-/* irc: 	irc.IRC4Fun.net                                     */
+/* Author: siniStar @ Xtheme Development Group                  */
+/* Website: http://www.Xtheme.org/                              */
+/* IRC: irc.IRC4Fun.net in #SWI -or- chat.freenode.net in #SWI  */
 /****************************************************************/
 
 
