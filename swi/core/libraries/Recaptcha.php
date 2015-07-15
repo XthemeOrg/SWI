@@ -75,53 +75,32 @@ class Recaptcha
      * @param array $extra_params an array of extra variables to post to the server
      * @return ReCaptchaResponse
      */
-  	function check_answer ($remoteip, $challenge, $response, $extra_params = array())
-  	{
-    	log_message('debug','Recaptcha::check_answer('.$remoteip.','.$challenge.','.$response.','.print_r($extra_params,TRUE).')');
 
-		if ($this->_rConfig['private'] == '')
-  		{
-  			log_message('error', 'You did not supply an API key for Recaptcha');
-  			return FALSE;
-  		}
-
-  		if ($remoteip == null || $remoteip == '')
-  		{
-  			log_message('error', 'For security reasons, you must pass the remote ip to reCAPTCHA');
-  			return FALSE;
-  		}
-
-    	// Discard spam submissions
-    	if ($challenge == null || strlen($challenge) == 0 || $response == null || strlen($response) == 0)
-    	{
-      		$this->_error = 'incorrect-captcha-sol';
-      		return FALSE;
-    	}
-
-    	$response = $this->_http_post(
-      								$this->_rConfig['RECAPTCHA_VERIFY_SERVER'],
-      								"/recaptcha/api/verify",
-    	  							array(
-    	  	  							'privatekey' 	=> $this->_rConfig['private'],
-    	  	  							'remoteip' 		=> $remoteip,
-    	  	  							'challenge' 	=> $challenge,
-    	  	  							'response' 		=> $response
-    	  								) + $extra_params
-    									);
-
-		log_message('debug', 'Recaptcha::_http_post response:'.print_r($response,TRUE));
-    	$answers = explode ("\n", $response[1]);
-
-    	if (trim($answers[0]) == 'true')
-    	{
-      		return TRUE;
-    	}
-    	else
-    	{
-      		$this->_error = $answers[1];
-      		return FALSE;
-    	}
-  	}
+  public function recaptcha($str='')
+  {
+    $google_url=$this->_rConfig['RECAPTCHA_VERIFY_SERVER'];
+    $secret=$this->_rConfig['private'];
+    $ip=$_SERVER['REMOTE_ADDR'];
+    $url=$google_url."?secret=".$secret."&response=".$str."&remoteip=".$ip;
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($curl, CURLOPT_TIMEOUT, 10);
+    curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.16) Gecko/20110319 Firefox/3.6.16");
+    $res = curl_exec($curl);
+    curl_close($curl);
+    $res= json_decode($res, true);
+    //reCaptcha success check
+    if($res['success'])
+    {
+      return TRUE;
+    }
+    else
+    {
+      $this->form_validation->set_message('recaptcha', 'The reCAPTCHA field is telling me that you are a robot. Shall we give it another try?');
+      return FALSE;
+    }
+  }
 
 	// --------------------------------------------------------------------
 

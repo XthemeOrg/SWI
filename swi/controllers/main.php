@@ -1,12 +1,12 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 /****************************************************************/
-/* SWI3 Inferface by siniStar @ IRC4Fun                         */
+/* SWI3 Inferface                                               */
 /*                                                              */
 /* author: 	Austin (siniStar)                                   */
-/* web:		http://irc4fun.github.io/SWI/						*/
+/* web:		http://www.Xtheme.org/SWI/				    		*/
 /* email: 	siniStar [at] IRC4Fun [dot] net                     */
-/* irc: 	irc.IRC4Fun.net                                     */
+/* irc: 	irc.IRC4Fun.net #SWI                                */
 /****************************************************************/
 
 
@@ -61,7 +61,7 @@ class Main extends CI_Controller {
 		$this->form_validation->set_rules('password', 'Password', 'required');
 
 		if ($this->config->item('login_recaptcha'))
-			$this->form_validation->set_rules('recaptcha_response_field', 'Are you human?', 'required|callback__check_captcha');
+			$this->form_validation->set_rules('g-recaptcha-response','Captcha','required|callback_recaptcha');
 		
 		if ($this->form_validation->run())
 		{	
@@ -236,7 +236,7 @@ class Main extends CI_Controller {
 	    $this->form_validation->set_rules('email', 'Email Address', 'required|valid_email');
 		
 	    if ($this->config->item('register_recaptcha'))
-	    	$this->form_validation->set_rules('recaptcha_response_field', 'Are you human?', 'required|callback__check_captcha');
+		$this->form_validation->set_rules('g-recaptcha-response','Captcha','required|callback_recaptcha');
 	    
 	    if ($this->form_validation->run())
 	    {
@@ -258,19 +258,8 @@ class Main extends CI_Controller {
 	//========================================================
 	// CALLBACK FUNCTIONS
 	//========================================================
-	
-	/**
-	 * _check_captcha()
-	 * function checks a captcha callback
-	 */
-	function _check_captcha($val)
-	{
-	  	if ($this->recaptcha->check_answer($this->input->ip_address(), $this->input->post('recaptcha_challenge_field'), $val))
-	    	return TRUE;
 
-	    $this->form_validation->set_message('_check_captcha', 'Incorrect Security Image Response');
-	    return FALSE;
-	}
+
 	// --------------------------------------------------------
 
 	

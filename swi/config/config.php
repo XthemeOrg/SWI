@@ -201,9 +201,9 @@ $config['recaptcha'] = array(
 /**  If your site uses SSL, you will want to change http: to https: on the following line for ReCaptcha
  *   to work and display properly.
  */
-    'RECAPTCHA_API_SERVER'          => 'http://www.google.com/recaptcha/api',
-    'RECAPTCHA_API_SECURE_SERVER'   => 'https://www.google.com/recaptcha/api',
-    'RECAPTCHA_VERIFY_SERVER'       => 'www.google.com',
+    'RECAPTCHA_API_SERVER'          => 'http://www.google.com/recaptcha/api.js',
+    'RECAPTCHA_API_SECURE_SERVER'   => 'https://www.google.com/recaptcha/api.js',
+    'RECAPTCHA_VERIFY_SERVER'       => 'https://www.google.com/recaptcha/api/siteverify',
     'RECAPTCHA_SIGNUP_URL'          => 'https://www.google.com/recaptcha/admin/create',
     'theme'                         => 'white'
 );
