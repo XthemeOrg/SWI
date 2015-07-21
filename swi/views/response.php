@@ -24,4 +24,4 @@
 			<?php endforeach; ?>
 		});
 	</script>
-<? endif; ?>
+<?php endif; ?>
