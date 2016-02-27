@@ -32,16 +32,16 @@ along with SWI.  If not, see http://www.gnu.org/licenses/
 
 ## SWI Web Panel for Atheme IRC Services (and Atheme forks)
 
-SWI is a simple web panel for Xtheme IRC services. It aims to be clean, sleek and fast. With minimul installation and configuration required.
+SWI is a simple web panel for Atheme IRC services. It aims to be clean, sleek and fast. With minimul installation and configuration required.
 SWI is a fork of EGs (https://bitbucket.org/jnewing/egs) with some bug fixes, cosmetic improvements and additional features and consoles in
-an effort to give users of networks running Xtheme Services the ultimate control over their IRC accounts, nicknames, channels, memos, vhosts
+an effort to give users of networks running Atheme Services the ultimate control over their IRC accounts, nicknames, channels, memos, vhosts
 and BotServ use via the World Wide Web.
 
 ## Notable New Features:
 
     1) NickServ Settings page
 	2) ChanServ Settings page
-	3) ChanServ WAITING list added to OperServ dashboard for networks running chanserv/moderate with Xtheme (optional)
+	3) ChanServ WAITING list added to OperServ dashboard for networks running chanserv/moderate with Atheme (optional)
 	4) HostServ WAITING list added to OperServ dashboard (optional)
 	5) BotServ consoles added: BOTLIST, ASSIGN, UNASSIGN and BOT MANAGEMENT (add/change/delete) for Services Operators
     6) Current Sessions page added to main dashboard
@@ -65,14 +65,14 @@ During this installation I'm going to assume a few things.
 
     1) that you know your way around a shell
     2) that you have some understanding of the mysql cli client tool
-    3) That you have Xtheme or Atheme IRC Services running with both the httpd and xmlrpc modules running.
+    3) That you have Atheme IRC Services (or an Atheme fork) experience running with both the httpd and xmlrpc modules running.
 
 
 First your going to need to obtain a copy of SWI one can be found here
 
 	https://github.com/atheme/SWI/
 
-Next up you're going to have to edit the swi/config/config.php file to reflect the settings of your web server and Xtheme installation.
+Next up you're going to have to edit the swi/config/config.php file to reflect the settings of your web server and Atheme installation.
 
 Cleaner URI's (**Optional**)
 
@@ -166,7 +166,7 @@ This is current supported on Apache, Lighttpd, Nginx and any other web server th
 
 ## Finished
 
-That's it! You should be able to direct your browser to http://www.yournetwork.net/swi/ and login using your Xtheme Nickserv account nickname and password.
+That's it! You should be able to direct your browser to http://www.yournetwork.net/swi/ and login using your Atheme Nickserv account nickname and password.
 
 ## Issues/Bugs
 
