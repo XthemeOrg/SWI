@@ -6,7 +6,7 @@
 
 **author email** siniStar [at] IRC4Fun [dot] net
 
-**author url** http://atheme.github,io
+**author url** http://atheme.github.io
 
 **version** 3.3.2
 
