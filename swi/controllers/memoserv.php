@@ -67,17 +67,6 @@ class Memoserv extends CI_Controller {
 				$page_data['msg'] = $callback['data'];
 		}
 
-		if ($this->input->post('delete_oldmemos'))
-		{
-			
-				$callback = $this->memoserv_model->delete_oldmemos();
-				
-				if (!$this->atheme->valid_authcookie($callback))
-					redirect('main/logout');
-				
-				$page_data['success'] = $callback['response'];
-				$page_data['msg'] = $callback['data'];
-		}
 		else
 		{
 		

@@ -269,31 +269,7 @@ class Memoserv_model extends CI_Model {
 	 	
 	 	return $ret_array;
 	}
-	
-	public function delete_oldmemos()
-	{
-		$ret_array = array();
-	 	
-		$cmd = $this->atheme->atheme_command($this->session->userdata('nick'), $this->session->userdata('auth'), $this->config->item('atheme_memoserv'), 
-	 		array(
-	 			"DEL",
-	 			'OLD'
-	 		)
-	 	);
-	 	
-	 	if ($cmd)
-	 	{
-	 		$ret_array['response'] = TRUE;
-	 		$ret_array['data'] = $this->xmlrpc->display_response();
-	 	}
-	 	else
-	 	{
-	 		$ret_array['response'] = FALSE;
-	 		$ret_array['data'] = $this->xmlrpc->display_error();
-	 	}
-	 	
-	 	return $ret_array;
-	}
+
 	// --------------------------------------------------------
 	 
 	 

@@ -8,7 +8,6 @@
 
 				<form action="" method="post">
 <input type="radio" name="delete_allmemos" value="1">All Memos<br>
-<input type="radio" name="delete_oldmemos" value="1">Read Memos<br>
 			<input type="submit" name="submit" value="Delete" class="button danger" />
 </form>
 			
