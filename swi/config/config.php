@@ -13,7 +13,7 @@ $config['base_url']	= 'http://yournetwork.net/swi/';
  * You will probably want to change at least the Network
  * name.
  */
-$config['site_name']	= "IRC4Fun Services Web Interface";
+$config['site_name']	= "YourNetwork Services Web Interface";
 
 /** 
  * Xtheme/Atheme Host
@@ -140,21 +140,21 @@ $config['staff_messages'] = TRUE;
  * Optional links to network facebook or twitter.  
  * TRUE enables Social Media, FALSE disables it.
  */
-$config['social_media'] = TRUE;
+$config['social_media'] = FALSE;
 
 /**
  * Network Facebook URL?
  * Optional URL to network Facebook account.  
  * You will probably want to change this from the default
  */
-$config['fb_url'] = 'http://www.facebook.com/XthemeOrg';
+$config['fb_url'] = 'http://www.facebook.com/YourNetwork';
 
 /**
  * Network Twitter URL?
  * Optional URL to network Twitter account.  
  * You will probably want to change this from the default
  */
-$config['tw_url'] = 'http://twitter.com/XthemeOrg';
+$config['tw_url'] = 'http://twitter.com/YourNetwork';
 
 /**
  * Index Page
