@@ -4,8 +4,8 @@
 /* SWI (Services Web Interface) An enhanced web-panel for IRC   */
 /*    networks.                                                 */
 /*                                                              */
-/* Author: siniStar @ Xtheme Development Group                  */
-/* Website: http://www.Xtheme.org/                              */
+/* Author: Austin Ellis (siniStar @ Atheme Group)               */
+/* Website: http://atheme.github.io/swi.html                    */
 /* IRC: irc.IRC4Fun.net in #SWI -or- chat.freenode.net in #SWI  */
 /****************************************************************/
 
