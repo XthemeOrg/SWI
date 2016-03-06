@@ -6,11 +6,6 @@
 		
 			<h2><img src=<?php print base_url(); ?>ico/email.png> <?php print ucfirst(strtolower($this->config->item('atheme_memoserv'))); ?> &gt; <?php _t('gen_list'); ?></h2>
 
-				<form action="" method="post">
-<input type="radio" name="delete_allmemos" value="1">All Memos<br>
-			<input type="submit" name="submit" value="Delete" class="button danger" />
-</form>
-			
 			<?php if (isset($response)) : ?>
 				<p class="hlight"><?php print nl2br($response); ?></p>
 			<?php endif; ?>
