@@ -94,6 +94,12 @@ class Main extends CI_Controller {
 		$this->load->view('credits', $page_data);		
 	}
 
+	public function cookies()
+	{
+		$page_data = array();
+		$this->load->view('cookies', $page_data);		
+	}
+
 	public function staff_messages()
 	{
 		$page_data = array();

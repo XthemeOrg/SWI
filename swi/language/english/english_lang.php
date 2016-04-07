@@ -13,6 +13,7 @@ $lang['gen_welcome_back']               = "Welcome back";
 $lang['gen_welcome']                    = "Welcome";
 $lang['gen_about_egs']                  = "About SWI3";
 $lang['gen_swicredits']                 = "Credits";
+$lang['gen_swicookies']                 = "SWI uses Cookies --More Info";
 $lang['gen_channel_access']             = "Channel Access";
 $lang['gen_register']                   = "Register";
 $lang['gen_username']                   = "Nickname";
@@ -31,7 +32,7 @@ $lang['gen_reason']                     = "Reason";
 $lang['gen_update']                     = "Update";
 $lang['gen_flags']                      = "Flags";
 $lang['gen_info']                       = "Info";
-$lang['gen_register']					= "Register";
+$lang['gen_register']                   = "Register";
 $lang['gen_clear']                      = "Clear";
 $lang['gen_topic']                      = "Topic";
 $lang['gen_hostname']                   = "Hostname";
@@ -185,11 +186,11 @@ $lang['os_dashboard']                   = "Dashboard";
 
 // GROUPSERV
 $lang['gs_listgroups']                  = "List Groups";
-$lang['gs_join']	   	                = "Join Group";
-$lang['gs_info']	       			    = "Group Info";
-$lang['gs_flags'] 					    = "Group Flags";
+$lang['gs_join']   	                = "Join Group";
+$lang['gs_info']       	                = "Group Info";
+$lang['gs_flags']                       = "Group Flags";
 $lang['gs_listchans']                   = "List Channel Access";
 $lang['gs_register']                    = "Register Group";
-$lang['gs_set']  	                    = "Group Settings";
+$lang['gs_set']                         = "Group Settings";
 
 // EOF
