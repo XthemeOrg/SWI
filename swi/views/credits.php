@@ -13,7 +13,7 @@
 							About &nbsp;&nbsp;&nbsp;&nbsp; <img src=<?php print base_url(); ?>ico/graphic-design.png> 						
 						</label>
             	      	<div>
-				<small>Services Web Interface version 3 (SWI3) is a fork of <a href="https://bitbucket.org/jnewing/egs" target="_blank">EGs Web Panel</a>, created by synmuffin. <i>(we and our users loved the interface!)</i> which we used as a base to start with.  SWI can be found at <a href="https://github.com/atheme/SWI/">https://github.com/atheme/SWI</a></small>
+				<small>Services Web Interface version 3 (SWI3) is a fork of <a href="https://bitbucket.org/jnewing/egs" target="_blank">EGs Web Panel</a>, created by synmuffin. <i>(we and our users loved the interface!)</i> which we used as a base to start with.  SWI can be found at <a href="http://www.Xtheme.org/SWI/">http://www.Xtheme.org/SWI</a></small>
 						</div>
 					</section>
 
@@ -41,7 +41,7 @@
 							Where can I get SWI3?							
 						</label>
 						<div>
-							<small>Our Services Web Interface (version3) is available at <a href="https://github.com/atheme/SWI/" target="_blank">https://github.com/atheme/SWI/</a>.  For support with SWI, please see <a href="https://kiwiirc.com/client/irc.irc4fun.net/#SWI" target="_blank"><strong>irc.IRC4Fun.net</strong> #SWI</a> --or-- <a href="https://kiwiirc.com/client/chat.freenode.net/#SWI" target="_blank"><strong>chat.freenode.net</strong> #SWI</a> for more information!</small>
+							<small>Our Services Web Interface (version3) is available at <a href="http://www.Xtheme.org/SWI/" target="_blank">http://www.Xtheme.org/SWI/</a>.  For support with SWI, please see <a href="https://kiwiirc.com/client/irc.irc4fun.net/#SWI" target="_blank"><strong>irc.IRC4Fun.net</strong> #SWI</a> --or-- <a href="https://kiwiirc.com/client/chat.freenode.net/#SWI" target="_blank"><strong>chat.freenode.net</strong> #SWI</a> for more information!</small>
 						</div>
 					</section>
 

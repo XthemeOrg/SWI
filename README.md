@@ -6,7 +6,7 @@
 
 **author email** siniStar [at] IRC4Fun [dot] net
 
-**author url** http://atheme.github.io
+**author url** http://www.Xtheme.org/SWI/
 
 **version** 3.3.2
 
@@ -30,9 +30,9 @@ along with SWI.  If not, see http://www.gnu.org/licenses/
 
 - - -
 
-## SWI Web Panel for Atheme IRC Services (and Atheme forks)
+## SWI Web Panel for Xtheme IRC Services (and Atheme & Atheme forks)
 
-SWI is a simple web panel for Atheme IRC services. It aims to be clean, sleek and fast. With minimul installation and configuration required.
+SWI is a simple web panel for Xtheme IRC services. It aims to be clean, sleek and fast. With minimul installation and configuration required.
 SWI is a fork of EGs (https://bitbucket.org/jnewing/egs) with some bug fixes, cosmetic improvements and additional features and consoles in
 an effort to give users of networks running Atheme Services the ultimate control over their IRC accounts, nicknames, channels, memos, vhosts
 and BotServ use via the World Wide Web.
@@ -70,7 +70,7 @@ During this installation I'm going to assume a few things.
 
 First your going to need to obtain a copy of SWI one can be found here
 
-	https://github.com/atheme/SWI/
+	https://github.com/XthemeOrg/SWI/
 
 Next up you're going to have to edit the swi/config/config.php file to reflect the settings of your web server and Atheme installation.
 
@@ -166,11 +166,11 @@ This is current supported on Apache, Lighttpd, Nginx and any other web server th
 
 ## Finished
 
-That's it! You should be able to direct your browser to http://www.yournetwork.net/swi/ and login using your Atheme Nickserv account nickname and password.
+That's it! You should be able to direct your browser to http://www.yournetwork.net/swi/ and login using your Xtheme/Atheme Nickserv account nickname and password.
 
 ## Issues/Bugs
 
-Please report all issues/bugs to Issues (https://github.com/atheme/SWI/issues) (in addition to IRC). 
+Please report all issues/bugs to Issues (https://github.com/XthemeOrg/SWI/issues) (in addition to IRC). 
 
 
 
