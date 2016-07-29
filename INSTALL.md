@@ -102,3 +102,8 @@ server {
 ## All Done!
 
 That's it! You should be able to direct your browser to http://www.yournetwork.net/swi/ and login using your Xtheme/Atheme Nickserv account nickname and password.
+
+## Stay up to date with XthemeOrg
+
+For News, Updates and Security Advisories, please subscribe to the XthemeOrg News mailing list at:
+https://www.irc4fun.net/xtheme-news/

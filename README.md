@@ -57,6 +57,9 @@ and BotServ use via the World Wide Web.
 If you need support please come talk to me on irc.IRC4Fun.net in #SWI however before doing that make sure you read this file, at
 least twice.  You can also find me on Freenode (chat.freenode.net) in #SWI
 
+For News, Updates and Security Advisories, please subscribe to the XthemeOrg News mailing list at:
+https://www.irc4fun.net/xtheme-news/
+
 - - -
 
 ## Installation
@@ -168,9 +171,18 @@ This is current supported on Apache, Lighttpd, Nginx and any other web server th
 
 That's it! You should be able to direct your browser to http://www.yournetwork.net/swi/ and login using your Xtheme/Atheme Nickserv account nickname and password.
 
+ - - -
+
 ## Issues/Bugs
 
 Please report all issues/bugs to Issues (https://github.com/XthemeOrg/SWI/issues) (in addition to IRC). 
+
+ - - -
+ 
+## Stay Current with XthemeOrg
+
+For News, Updates and Security Advisories, please subscribe to the XthemeOrg News mailing list at:
+https://www.irc4fun.net/xtheme-news/
 
 
 
