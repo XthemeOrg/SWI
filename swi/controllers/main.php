@@ -4,8 +4,8 @@
 /* SWI (Services Web Interface) An enhanced web-panel for IRC   */
 /*    networks.                                                 */
 /*                                                              */
-/* Author: Austin Ellis (siniStar @ Atheme Group)               */
-/* Website: http://atheme.github.io/swi.html                    */
+/* Author: Austin Ellis (siniStar @ Xtheme Group)               */
+/* Website: http://www.xtheme.org/SWI                           */
 /* IRC: irc.IRC4Fun.net in #SWI -or- chat.freenode.net in #SWI  */
 /****************************************************************/
 
@@ -108,9 +108,14 @@ class Main extends CI_Controller {
 	public function nac()
 	{
 		$page_data = array();
-		$this->load->view('nac', $page_data);		
+		$this->load->view('nac', $page_data);
 	}
-	
+	public function rd()
+	{
+		$page_data = array();
+		$this->load->view('rd', $page_data);
+	}
+
 	/**
 	 * Home Page
 	 * Displays the main dashboard page.

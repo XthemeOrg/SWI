@@ -4,8 +4,8 @@
 /* SWI (Services Web Interface) An enhanced web-panel for IRC   */
 /*    networks.                                                 */
 /*                                                              */
-/* Author: Austin Ellis (siniStar @ Atheme Group)               */
-/* Website: http://atheme.github.io/swi.html                    */
+/* Author: Austin Ellis (siniStar @ Xtheme Group)               */
+/* Website: http://www.xtheme.org/SWI                           */
 /* IRC: irc.IRC4Fun.net in #SWI -or- chat.freenode.net in #SWI  */
 /****************************************************************/
 
@@ -41,6 +41,8 @@ class Groupserv extends CI_Controller {
 		
 		if (!$this->session->userdata('is_authed'))
 			redirect('main');
+        if (!$this->config->item('atheme_groupserv'))
+            redirect('main/rd');
 	}
 	// --------------------------------------------------------
 	
@@ -69,6 +71,9 @@ class Groupserv extends CI_Controller {
 			
 		if (!$this->atheme->valid_authcookie($callback))
 			redirect('main/logout');
+
+        if (!$this->config->item('atheme_groupserv'))
+            redirect('main/rd');
 			
 		$page_data['response'] = $callback['data'];
 		
@@ -96,6 +101,9 @@ class Groupserv extends CI_Controller {
 			// validate the call
 			if (!$this->atheme->valid_authcookie($callback))
 				redirect('main/logout');
+
+            if (!$this->config->item('atheme_groupserv'))
+                redirect('main/rd');
 				
 			$page_data['success'] = $callback['response'];
 			$page_data['msg'] = $callback['data'];
@@ -125,6 +133,9 @@ class Groupserv extends CI_Controller {
 			// validate the call
 			if (!$this->atheme->valid_authcookie($callback))
 				redirect('main/logout');
+
+            if (!$this->config->item('atheme_groupserv'))
+                redirect('main/rd');
 				
 			$page_data['success'] = $callback['response'];
 			$page_data['msg'] = $callback['data'];
@@ -154,6 +165,9 @@ class Groupserv extends CI_Controller {
 			// validate the call
 			if (!$this->atheme->valid_authcookie($callback))
 				redirect('main/logout');
+
+            if (!$this->config->item('atheme_groupserv'))
+                redirect('main/rd');
 				
 			$page_data['response'] = $callback['data'];
 		}
@@ -203,6 +217,9 @@ class Groupserv extends CI_Controller {
 
 			if (!$this->atheme->valid_authcookie($callback))
 				redirect('main/logout');
+
+            if (!$this->config->item('atheme_groupserv'))
+                redirect('main/rd');
 			
 		}
 		
@@ -251,6 +268,9 @@ class Groupserv extends CI_Controller {
 
 			if (!$this->atheme->valid_authcookie($callback))
 				redirect('main/logout');
+
+            if (!$this->config->item('atheme_groupserv'))
+                redirect('main/rd');
 			
 		}
 		
@@ -275,6 +295,9 @@ class Groupserv extends CI_Controller {
 			
 			if (!$this->atheme->valid_authcookie($callback))
 				redirect('main/logout');
+
+            if (!$this->config->item('atheme_groupserv'))
+                redirect('main/rd');
 			
 			$page_data['response'] = $callback['data'];
 				

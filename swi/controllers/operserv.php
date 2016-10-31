@@ -4,8 +4,8 @@
 /* SWI (Services Web Interface) An enhanced web-panel for IRC   */
 /*    networks.                                                 */
 /*                                                              */
-/* Author: Austin Ellis (siniStar @ Atheme Group)               */
-/* Website: http://atheme.github.io/swi.html                    */
+/* Author: Austin Ellis (siniStar @ Xtheme Group)               */
+/* Website: http://www.xtheme.org/SWI                           */
 /* IRC: irc.IRC4Fun.net in #SWI -or- chat.freenode.net in #SWI  */
 /****************************************************************/
 
@@ -42,6 +42,8 @@ class Operserv extends CI_Controller {
 		
 		if (!$this->session->userdata('is_authed'))
 			redirect('main');
+        if (!$this->config->item('atheme_operserv'))
+            redirect('main/rd');
 	}
 	// --------------------------------------------------------
 	
@@ -78,6 +80,9 @@ class Operserv extends CI_Controller {
 			if (!$this->atheme->valid_authcookie($callback))
 				redirect('main/logout');
 
+            if (!$this->config->item('atheme_operserv'))
+                redirect('main/rd');
+
 			// auth access check
 			if (!$this->operserv_model->check_access())
 				redirect('main');
@@ -93,6 +98,9 @@ class Operserv extends CI_Controller {
 		// auth valid session
 		if (!$this->atheme->valid_authcookie($callback))
 			redirect('main/logout');
+
+        if (!$this->config->item('atheme_operserv'))
+            redirect('main/rd');
 			
 		// auth access check
 		if (!$this->operserv_model->check_access())
@@ -121,6 +129,9 @@ class Operserv extends CI_Controller {
 		if (!$this->operserv_model->check_access())
 			redirect('main/nac');
 
+        if (!$this->config->item('atheme_operserv'))
+            redirect('main/rd');
+
 
 			$page_data['response'] = $callback['data'];
 
@@ -140,10 +151,14 @@ class Operserv extends CI_Controller {
 
 			if (!$this->atheme->valid_authcookie($callback))
 				redirect('main/logout');
+            if (!$this->config->item('atheme_operserv'))
+                redirect('main/rd');
 				
 		// auth access check
 		if (!$this->operserv_model->check_access())
 			redirect('main/nac');
+        if (!$this->config->item('atheme_operserv'))
+            redirect('main/rd');
 
 			// are we managing our WAITING list
 			if ($this->input->post('set_review'))
@@ -162,8 +177,8 @@ class Operserv extends CI_Controller {
 	// --------------------------------------------------------
 	
 	/**
-	 * Waiting Page
-	 * Page displays list of channels waiting to be reviewed
+	 * HostServ Waiting Page
+	 * Page displays list of users waiting to have vHost request reviewed
 	 */
 	public function hswaiting()
 	{
@@ -176,6 +191,9 @@ class Operserv extends CI_Controller {
 		// auth access check
 		if (!$this->operserv_model->check_access())
 			redirect('main/nac');
+
+        if (!$this->config->item('atheme_operserv'))
+            redirect('main/rd');
 
 
 			$page_data['response'] = $callback['data'];
@@ -196,10 +214,14 @@ class Operserv extends CI_Controller {
 
 			if (!$this->atheme->valid_authcookie($callback))
 				redirect('main/logout');
+            if (!$this->config->item('atheme_operserv'))
+                redirect('main/rd');
 				
 		// auth access check
 		if (!$this->operserv_model->check_access())
 			redirect('main/nac');
+        if (!$this->config->item('atheme_operserv'))
+            redirect('main/rd');
 
 			// are we managing our WAITING list
 			if ($this->input->post('set_review'))
@@ -231,6 +253,8 @@ class Operserv extends CI_Controller {
 			// auth access check
 		if (!$this->operserv_model->check_access())
 			redirect('main/nac');
+        if (!$this->config->item('atheme_operserv'))
+            redirect('main/rd');
 
 		// form validation rules for adding an akill
 		if ($this->input->post('add_akill'))
@@ -259,6 +283,8 @@ class Operserv extends CI_Controller {
 			// auth valid session
 			if (!$this->atheme->valid_authcookie($callback))
 				redirect('main/logout');
+            if (!$this->config->item('atheme_operserv'))
+                redirect('main/rd');
 
             // atheme response
             $page_data['success'] = $callback['response'];
@@ -271,6 +297,8 @@ class Operserv extends CI_Controller {
 		// auth check
 		if (!$this->atheme->valid_authcookie($callback))
 			redirect('main/logout');
+        if (!$this->config->item('atheme_operserv'))
+            redirect('main/rd');
 
 		if ($callback['response'])
 			$page_data['info'] = $this->fout->as_akills($this->fout->as_array($callback['data']));
@@ -280,9 +308,9 @@ class Operserv extends CI_Controller {
 	// --------------------------------------------------------
 
 	/**
-	 * Uworld X-WAITING REVIEW Page
-	 * Page allows users to manage channel flags via the XOP system, this page will only
-	 * be display if $config['atheme_xop'] is set to TRUE.
+	 * OperServ ChanServ WAITING REVIEW Page
+	 * Page allows services operators to review channel registrations if chanserv/moderate
+	 * is enabled.
 	 * 
 	 */
 	public function waiting_review()
@@ -312,6 +340,8 @@ class Operserv extends CI_Controller {
 
 			if (!$this->atheme->valid_authcookie($callback))
 				redirect('main/logout');
+            if (!$this->config->item('atheme_operserv'))
+                redirect('main/rd');
 		}
 
 
@@ -331,6 +361,8 @@ class Operserv extends CI_Controller {
 				// auth access check
 		if (!$this->operserv_model->check_access())
 			redirect('main/nac');
+        if (!$this->config->item('atheme_operserv'))
+            redirect('main/rd');
 
 		// validation rules for loading a module
 		if ($this->input->post('load_module'))
@@ -354,6 +386,8 @@ class Operserv extends CI_Controller {
 			// auth check
 			if (!$this->atheme->valid_authcookie($callback))
 				redirect('main/logout');
+            if (!$this->config->item('atheme_operserv'))
+                redirect('main/rd');
 
 			// atheme response
 			$page_data['success'] =  $page_data['info'] = $callback['response'];
@@ -366,6 +400,8 @@ class Operserv extends CI_Controller {
 		// auth check
 		if (!$this->atheme->valid_authcookie($callback))
 			redirect('main/logout');
+        if (!$this->config->item('atheme_operserv'))
+            redirect('main/rd');
 
 		// clean modules list for options list
 		$page_data['modules'] = $this->fout->as_modules($this->fout->as_array($callback['data']));
@@ -388,6 +424,8 @@ class Operserv extends CI_Controller {
 				// auth access check
 		if (!$this->operserv_model->check_access())
 			redirect('main/nac');
+        if (!$this->config->item('atheme_operserv'))
+            redirect('main/rd');
 
 		// validation rules for adding a soper
 		if ($this->input->post('add_soper'))
@@ -414,6 +452,8 @@ class Operserv extends CI_Controller {
 			// auth check
 			if (!$this->atheme->valid_authcookie($callback))
 				redirect('main/logout');
+            if (!$this->config->item('atheme_operserv'))
+                redirect('main/rd');
 
 			// atheme response
 			$page_data['success'] =  $page_data['info'] = $callback['response'];
@@ -426,6 +466,8 @@ class Operserv extends CI_Controller {
 		// auth check
 		if (!$this->atheme->valid_authcookie($callback))
 			redirect('main/logout');
+        if (!$this->config->item('atheme_operserv'))
+            redirect('main/rd');
 
 		// clean modules list for options list
 		$page_data['sopers'] = $this->fout->as_sopers( $this->fout->as_array($callback['data']) );
@@ -448,6 +490,8 @@ class Operserv extends CI_Controller {
 				// auth access check
 		if (!$this->operserv_model->check_access())
 			redirect('main/nac');
+        if (!$this->config->item('atheme_operserv'))
+            redirect('main/rd');
 
 		// validation rules
 		$this->form_validation->set_rules('rehash_check', 'Rehash Confirm', 'required|callback__rehash_confirm');
@@ -460,6 +504,8 @@ class Operserv extends CI_Controller {
 			// auth check
 			if (!$this->atheme->valid_authcookie($callback))
 				redirect('main/logout');
+            if (!$this->config->item('atheme_operserv'))
+                redirect('main/rd');
 
 			// atheme response
 			$page_data['success'] =  $page_data['info'] = $callback['response'];
@@ -483,6 +529,8 @@ class Operserv extends CI_Controller {
 				// auth access check
 		if (!$this->operserv_model->check_access())
 			redirect('main/nac');
+        if (!$this->config->item('atheme_operserv'))
+            redirect('main/rd');
 
 		// form validation rules
 		$this->form_validation->set_rules('password', 'Password', 'required');
