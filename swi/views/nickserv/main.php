@@ -6,7 +6,7 @@
 			
 			<h2><img src=<?php print base_url(); ?>ico/my-account.png> <?php print ucfirst(strtolower($this->config->item('atheme_nickserv'))); ?> &gt; <?php _t('ns_info'); ?></h2>
 			<div class="box-content">
-				<p class="hlight"><?php print $response; ?></p>
+				<p class="hlight"><?php if(isset($response)){print $response;} ?></p>
 			</div>
 			
 			<form action="" method="post">
