@@ -533,7 +533,7 @@ class XML_RPC_Message extends CI_Xmlrpc
 			return $r;
 		}
 
-		(int)$parser = xml_parser_create($this->xmlrpc_defencoding);
+		$parser = xml_parser_create($this->xmlrpc_defencoding);
 
 		$this->xh[(int)(int)$parser]					= array();
 		$this->xh[(int)(int)$parser]['isf']			= 0;
