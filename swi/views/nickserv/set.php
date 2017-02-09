@@ -6,7 +6,7 @@
 			
 			<h2><img src=<?php print base_url(); ?>ico/my-account.png> <?php print ucfirst(strtolower($this->config->item('atheme_nickserv'))); ?> &gt; Account Settings</h2>
 			<div class="box-content">
-				<p class="hlight"><?php print $response; ?></p>
+				<p class="hlight"><?php if(isset($response)){print $response;} ?></p>
 			</div>
 			<div class="column left"><form>
 			<h3><img src=<?php print base_url(); ?>ico/consulting.png> Settings Information </h3>
