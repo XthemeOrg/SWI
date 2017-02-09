@@ -535,13 +535,13 @@ class XML_RPC_Message extends CI_Xmlrpc
 
 		$parser = xml_parser_create($this->xmlrpc_defencoding);
 
-		$this->xh[(int)(int)$parser]					= array();
-		$this->xh[(int)(int)$parser]['isf']			= 0;
-		$this->xh[(int)(int)$parser]['ac']			= '';
-		$this->xh[(int)(int)$parser]['headers']		= array();
-		$this->xh[(int)(int)$parser]['stack']			= array();
-		$this->xh[(int)(int)$parser]['valuestack']	= array();
-		$this->xh[(int)(int)$parser]['isf_reason']	= 0;
+		$this->xh[(int)$parser]					= array();
+		$this->xh[(int)$parser]['isf']			= 0;
+		$this->xh[(int)$parser]['ac']			= '';
+		$this->xh[(int)$parser]['headers']		= array();
+		$this->xh[(int)$parser]['stack']			= array();
+		$this->xh[(int)$parser]['valuestack']	= array();
+		$this->xh[(int)$parser]['isf_reason']	= 0;
 
 		xml_set_object($parser, $this);
 		xml_parser_set_option($parser, XML_OPTION_CASE_FOLDING, true);
@@ -556,7 +556,7 @@ class XML_RPC_Message extends CI_Xmlrpc
 			{
 				break;
 			}
-			$this->xh[(int)(int)$parser]['headers'][] = $line;
+			$this->xh[(int)$parser]['headers'][] = $line;
 		}
 		$data = implode("\r\n", $lines);
 
