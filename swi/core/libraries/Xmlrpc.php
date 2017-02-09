@@ -556,7 +556,7 @@ class XML_RPC_Message extends CI_Xmlrpc
 			{
 				break;
 			}
-			$this->xh[$parser]['headers'][] = $line;
+			$this->xh[(int)$parser]['headers'][] = $line;
 		}
 		$data = implode("\r\n", $lines);
 
@@ -637,9 +637,9 @@ class XML_RPC_Message extends CI_Xmlrpc
 
 	function open_tag($the_parser, $name, $attrs)
 	{
-		if ($this->xh[$the_parser]['isf'] > 1) return;
+		if ($this->xh[(int)$the_parser]['isf'] > 1) return;
 
-		if (count($this->xh[$the_parser]['stack']) == 0)
+		if (count($this->xh[(int)$the_parser]['stack']) == 0)
 		{
 			if ($name != 'METHODRESPONSE' && $name != 'METHODCALL')
 			{
@@ -716,9 +716,9 @@ class XML_RPC_Message extends CI_Xmlrpc
 			break;
 		}
 
-		array_unshift($this->xh[$the_parser]['stack'], $name);
+		array_unshift($this->xh[(int)$the_parser]['stack'], $name);
 
-		if ($name != 'VALUE') $this->xh[$the_parser]['lv'] = 0;
+		if ($name != 'VALUE') $this->xh[(int)$the_parser]['lv'] = 0;
 	}
 	
 	function closing_tag($the_parser, $name)
@@ -848,21 +848,21 @@ class XML_RPC_Message extends CI_Xmlrpc
 
 	function character_data($the_parser, $data)
 	{
-		if ($this->xh[$the_parser]['isf'] > 1) return;
+		if ($this->xh[(int)$the_parser]['isf'] > 1) return;
 
-		if ($this->xh[$the_parser]['lv'] != 3)
+		if ($this->xh[(int)$the_parser]['lv'] != 3)
 		{
-			if ($this->xh[$the_parser]['lv'] == 1)
+			if ($this->xh[(int)$the_parser]['lv'] == 1)
 			{
-				$this->xh[$the_parser]['lv'] = 2;
+				$this->xh[(int)$the_parser]['lv'] = 2;
 			}
 
-			if ( ! @isset($this->xh[$the_parser]['ac']))
+			if ( ! @isset($this->xh[(int)$the_parser]['ac']))
 			{
-				$this->xh[$the_parser]['ac'] = '';
+				$this->xh[(int)$the_parser]['ac'] = '';
 			}
 
-			$this->xh[$the_parser]['ac'] .= $data;
+			$this->xh[(int)$the_parser]['ac'] .= $data;
 		}
 	}
 
