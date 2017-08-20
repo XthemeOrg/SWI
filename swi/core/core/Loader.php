@@ -105,8 +105,8 @@ class CI_Loader {
 
 		if (($last_slash = strrpos($model, '/')) !== FALSE)
 		{
-			$path = substr($model, 0, $last_slash + 1);
-			$model = substr($model, $last_slash + 1);
+			$path = substr($model, 0, ++$last_slash);
+			$model = substr($model, $last_slash);
 		}
 
 		if ($name == '')
@@ -461,7 +461,7 @@ class CI_Loader {
 
 		if ((bool) @ini_get('short_open_tag') === FALSE AND config_item('rewrite_short_tags') == TRUE)
 		{
-			echo eval('?>'.preg_replace("/;*\s*\?>/", "; ?>", str_replace('<?=', '<?php echo ', file_get_contents($_ci_path))));
+			echo eval('?>'.preg_replace('/;*\s*\?>/', '; ?>', str_replace('<?=', '<?php echo ', file_get_contents($_ci_path))));
 		}
 		else
 		{
@@ -748,13 +748,13 @@ class CI_Loader {
 	{
 		if ( ! is_array($filename))
 		{
-			return array(strtolower(str_replace('.php', '', str_replace($extension, '', $filename)).$extension));
+			return array(strtolower(str_replace(array($extension, '.php'), '', $filename).$extension));
 		}
 		else
 		{
 			foreach ($filename as $key => $val)
 			{
-				$filename[$key] = strtolower(str_replace('.php', '', str_replace($extension, '', $val)).$extension);
+				$filename[$key] = strtolower(str_replace(array($extension, '.php'), '', $val).$extension);
 			}
 
 			return $filename;
