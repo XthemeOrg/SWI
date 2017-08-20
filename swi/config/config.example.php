@@ -1,6 +1,16 @@
 <?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
+ * Be sure to READ and EDIT your Services Web Interface configuration
+ * closely and carefully, then save as config.php.
+ *
+ * Support can be obtained on irc.IRC4Fun.net or chat.freenode.net in
+ * #SWI or #Xtheme
+ *
+ * -Xtheme Development Group (www.Xtheme.org)
+ */
+
+/**
  * Base URL
  * This should be the base url to your site WITH the trailing slash
  * eg: http://yournetwork.net/
