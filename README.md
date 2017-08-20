@@ -8,7 +8,7 @@
 
 **author url** http://www.Xtheme.org/SWI/
 
-**version** 3.3.2
+**version** 3.4.0
 
 - - -
 
@@ -49,6 +49,8 @@ and BotServ use via the World Wide Web.
 	8) GroupServ console & functionality added (optional)
 	9) ReCaptcha v2
 	10) Configure whether to show +qah in flags assistance to users based on how the network is configured.
+	11) Update to core framework for newer versions of PHP to get rid of warnings and notices.
+	12) Update config.php to config.example.php so that existing configs are not overwritten by updates.
 
 - - -
 
@@ -68,14 +70,14 @@ During this installation I'm going to assume a few things.
 
     1) that you know your way around a shell
     2) that you have some understanding of the mysql cli client tool
-    3) That you have Atheme IRC Services (or an Atheme fork) experience running with both the httpd and xmlrpc modules running.
+    3) That you have Xtheme IRC Services (or an Atheme fork) experience running with both the httpd and xmlrpc modules running.
 
 
 First your going to need to obtain a copy of SWI one can be found here
 
 	https://github.com/XthemeOrg/SWI/
 
-Next up you're going to have to edit the swi/config/config.php file to reflect the settings of your web server and Atheme installation.
+Next up you're going to have to edit the swi/config/config.example.php file to reflect the settings of your web server and Xtheme installation.
 
 Cleaner URI's (**Optional**)
 
